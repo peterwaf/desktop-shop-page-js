@@ -235,9 +235,11 @@ function localStorageCartProducts() {
   const addedProducts = [];
   for (let i = 0; i < localStorage.length; i++) {
     const addedProduct = localStorage.key(i);
-    const addedProductText = localStorage.getItem(addedProduct);
-    const addedProductObject = JSON.parse(addedProductText);
-    addedProducts.push(addedProductObject);
+    if (addedProduct.startsWith('cartItem')) {
+      const addedProductText = localStorage.getItem(addedProduct);
+      const addedProductObject = JSON.parse(addedProductText);
+      addedProducts.push(addedProductObject);
+    }
   }
   return addedProducts;
 }
@@ -287,5 +289,6 @@ reduceProductQty();
 //load CartProducts Total
 loadCartProductsTotal();
 loadCartProductsQty();
+
 
 
