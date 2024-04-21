@@ -1,0 +1,141 @@
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NavBar/Menu  */
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.container header {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
+}
+
+.container h1 {
+  color: #560bad;
+}
+
+.container header .shopping {
+  position: relative;
+  text-align: right;
+}
+
+.shopping i {
+  color: #560bad;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.shopping :hover {
+  color: #6e19cf;
+}
+
+.shopping span {
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  background: red;
+  padding: 3px 8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* products list div */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list .productItem {
+  margin: 6px 2px;
+}
+
+/* product Items */
+.productItem p,
+.productItem button {
+  text-align: left;
+
+}
+
+.productItem img {
+  width: 245px;
+  height: 298px;
+  margin: auto;
+}
+
+/* Cart  */
+.cart {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #dadada;
+  height: 100vh;
+  border-left: 1px solid #560bad;
+  transition: 0.5s;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* Cart Items */
+
+
+.listCart li  {
+  padding: 2px;
+  list-style: none;
+}
+
+.cart-img {
+  width: 50px;
+  height: 60px;
+}
+
+.product-qty {
+  width: 25%;
+}
+
+/* class added from js  */
+.active .cart {
+  left: calc(100% - 500px);
+}
+
+.cart h1 {
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.cart .checkOut {
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cart .checkOut div {
+  background-color: #560bad;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.cart .checkOut .closeShopping {
+  background-color: #1c1f25;
+  color: #fff;
+}

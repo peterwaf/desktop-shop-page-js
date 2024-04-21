@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping</title>
+
+  <!-- css  -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- icon cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- menu/NavBar  -->
+  <div class="container">
+    <header>
+      <h1>Shop Page</h1>
+
+      <div class="shopping">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="quantity">0</span>
+      </div>
+    </header>
+
+    <!-- products will be listed  -->
+    <div class="list">
+
+    </div>
+  </div>
+
+  <!-- cart  -->
+  <div class="cart">
+    <h1>Cart</h1>
+    <!-- Different products added to the cart will be shown here -->
+    <ul class="listCart">
+      <li id="jshs"></li>
+      <!-- <li id="${oneProductStringObject.id}">
+        <table>
+        <tr>
+        <td><img src="${oneProductStringObject.image}" class="cart-img" alt=""></td>
+        <td>${oneProductStringObject.title}</td>
+        <td>KES ${oneProductStringObject.amount}</td>
+        <td><b>Qty</b></td>
+        <td><button type="button">-</button>
+        <input class="product-qty" type="number" name="product-qty" value="1">
+        <button class="qty-add" type="button">+</button></td>
+        </tr>
+        </table>
+      </li> -->
+    </ul>
+
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
